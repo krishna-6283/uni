@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif; /* Updated to Merriweather for a Romanian feel */
+    display: flex;
+    height: 100vh;
+    background-color: #181818;
+    color: white;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 350px; /* Adjust width as needed */
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+}
+
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.sidebar .tab {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #181818;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+.sidebar .tab:hover, .sidebar .tab.active {
+    background-color: #ffffff; /* Match the hover effect on the right sidebar */
+    color: #000; /* Text color changes to black on hover */
+}
+
+.container {
+    margin-left: 350px; /* Adjusted to match new sidebar width */
+    margin-right: 300px; /* Keep the right sidebar width consistent */
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    background-color: #181818;
+    color: white;
+    overflow-y: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+}
+
+.post-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+}
+
+.post-form input[type="file"] {
+    margin-bottom: 15px;
+    max-width: 100%;
+    width: auto;
+    display: block;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.post-form button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-form button:hover {
+    background-color: #ffffff;
+}
+
+.posts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.post {
+    background-color: #282828;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.2em;
+}
+
+.right-sidebar {
+    width: 300px; /* Increased width */
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.right-sidebar .section {
+    margin-bottom: 30px;
+}
+
+.right-sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.right-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-sidebar ul li {
+    margin: 10px 0;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.right-sidebar ul li:hover {
+    background-color: #ffffff;
+    color: #000;
+    cursor: pointer;
+}

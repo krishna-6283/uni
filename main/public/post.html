@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniThreads</title>
+    <link rel="stylesheet" href="post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo2.jpg" alt="UniThreads Logo">
+        </div>
+        <div class="tab active"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAATlJREFUSEvt1rFKA0EQgOE/hfgA2lnkLSwUAr6Fhmij76G+hykUlbxFIJAmrU+QIp2mDxbqwCxs1ltvZl1Ic2kuHDv7zczdzV2PHf16O3IphSVuqEm/Al/eAkpgiRHsXLGJJuHCvXCKhkLduAeWtU/ASLWlHvt6fAaurG23wmmlK+BUwTlw5G27Bc6hccVuvA1uQ8M1lna78L9gK1qE52Av6sab4FLUhafwf1EzHsNNw+H+Z6c77zjU9RJ3G8VuDZkYvtQBETs1YdlXhs+L/IlhmTqPSXW14QtAKt+CJYkTYA+YagK14DNgDbyFkZp7nMKbphb8y+ngcG91rS6ZIfEA6W6u7OftO3BQ0t+GmA/gMD2fe44fgOtK8Bi4scIyNgfAMbBfmMAGWAAz4NMKF1r2sLaPPftOzpXfgfZoH4dDPPYAAAAASUVORK5CYII="/></i>Home</div>
+        <div class="tab">Profile</div>
+        <div class="tab">Messages</div>
+        <div class="tab">Settings</div>
+        <div class="tab">Notifications</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- <div class="header">
+            <img src="image.png" alt="UniThreads Name">
+        </div> -->
+        <div class="post-form">
+            <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+            <input type="file" id="postImage">
+            <button onclick="addPost()">Post</button>
+        </div>
+        <div id="postsContainer" class="posts-container">
+            <!-- Example of a Post -->
+            <div class="post">
+                <p>This is a sample post.</p>
+            </div>
+            <div class="post">
+                <p>Another example post content.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+        <div class="section">
+            <h2>What’s happening</h2>
+            <ul>
+                <li>#fuckLGBTQ</li>
+                <li>#pkmkb</li>
+                <li>#Ass>Boobs</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Suggested Accounts</h2>
+            <ul>
+                <li>@divyansh</li>
+                <li>@divesh</li>
+                <li>@uday</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="post.js"></script>
+</body>
+</html>
